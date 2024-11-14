@@ -97,3 +97,22 @@
 //   }
 
 // console.log(sumRange(1,valeurUser));
+
+
+
+// Exercice 5.7
+
+
+function fact(n) { 
+    let res = 1; 
+    
+    if(n === 0)
+        return 1;
+    for (let i = 2; i <= n; i++) 
+        res = res * i; 
+    return res; 
+}
+
+let numero = Number(prompt(`Entrez un numéro afin qu'il soit factoriser :`));
+
+console.log(fact(numero));
