@@ -51,3 +51,40 @@
 //     num += 1;
 //     console.log(num);
 // };
+
+
+
+// Exercice 5.5
+
+
+// const num = Number(prompt(`Entrez un nombre ici :`));
+
+// for(let i = 1; i < 10; i +=1){
+    
+//     let resultat = num * i;
+//     console.log(`${num} x ${i} = ${resultat}`);
+    
+    
+// };
+
+
+// const num = Number(prompt(`Entrez un nombre ici :`));
+// let text = "";
+
+// for(let i = 1; i <= 10; i +=1){
+    
+//     let resultat = num * i;
+//     text +=(`${num} x ${i} = ${resultat} \n`);
+    
+    
+// };
+
+// alert(text)
+
+
+
+
+// Exercice 5.6
+
+
+
