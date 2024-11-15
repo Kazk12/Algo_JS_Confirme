@@ -174,3 +174,34 @@
 // }
 
 // console.log(`Le nombre le plus grand a été mis à la position  ${indexTableau} : et c'est ${NombrePlusEleve}`);
+
+
+
+// Exercice 5.10
+
+const euros = [100, 50, 20, 10, 5, 2, 1];
+
+const priceOfProducts = parseInt(window.prompt("Enter the price of the products:"));
+let budget = parseInt(window.prompt("Enter your budget:"));
+let rest = budget - priceOfProducts;
+
+while (true) {
+    if (budget < priceOfProducts) {
+        budget = parseInt(window.prompt("Enter your budget:"));
+        rest = budget - priceOfProducts;
+        continue;
+    }
+    break;
+}
+
+euros.forEach(function(euro) {
+    let x;
+    if (rest / euro >= 1) {
+        x = Math.floor(rest / euro);
+        alert(x + "billet de " + euro);
+        rest = rest % euro;
+    }
+});
+
+
+
