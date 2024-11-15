@@ -179,29 +179,53 @@
 
 // Exercice 5.10
 
-const euros = [100, 50, 20, 10, 5, 2, 1];
+// const euros = [100, 50, 20, 10, 5, 2, 1];
 
-const priceOfProducts = parseInt(window.prompt("Enter the price of the products:"));
-let budget = parseInt(window.prompt("Enter your budget:"));
-let rest = budget - priceOfProducts;
+// const priceOfProducts = parseInt(window.prompt("Enter the price of the products:"));
+// let budget = parseInt(window.prompt("Enter your budget:"));
+// let rest = budget - priceOfProducts;
 
-while (true) {
-    if (budget < priceOfProducts) {
-        budget = parseInt(window.prompt("Enter your budget:"));
-        rest = budget - priceOfProducts;
-        continue;
-    }
-    break;
+// while (true) {
+//     if (budget < priceOfProducts) {
+//         budget = parseInt(window.prompt("Enter your budget:"));
+//         rest = budget - priceOfProducts;
+//         continue;
+//     }
+//     break;
+// }
+
+// euros.forEach(function(euro) {
+//     let x;
+//     if (rest / euro >= 1) {
+//         x = Math.floor(rest / euro);
+//         alert(x + "billet de " + euro);
+//         rest = rest % euro;
+//     }
+// });
+
+
+// Exercice 5.11
+
+
+
+const numberOfHorseStarting = prompt("Horses starting: ");
+const numberOfHorsePlayed = prompt("Horses played: ");
+
+const factN = fact(numberOfHorseStarting);
+const factNP = fact((numberOfHorseStarting - numberOfHorsePlayed))
+
+x= factN / factNP;
+y = factN / (fact(numberOfHorsePlayed) * factNP);
+
+alert(`Dans l’ordre : une chance sur ${x} de gagner \nDans le désordre : une chance sur ${y} de gagner`);
+
+function fact(n) { 
+    let res = 1; 
+
+    if(n === 0)
+        return 1;
+    for (let i = 2; i <= n; i++) 
+        res = res * i; 
+    return res; 
 }
-
-euros.forEach(function(euro) {
-    let x;
-    if (rest / euro >= 1) {
-        x = Math.floor(rest / euro);
-        alert(x + "billet de " + euro);
-        rest = rest % euro;
-    }
-});
-
-
 
