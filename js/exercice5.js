@@ -103,16 +103,74 @@
 // Exercice 5.7
 
 
-function fact(n) { 
-    let res = 1; 
+// function fact(n) { 
+//     let res = 1; 
     
-    if(n === 0)
-        return 1;
-    for (let i = 2; i <= n; i++) 
-        res = res * i; 
-    return res; 
-}
+//     if(n === 0)
+//         return 1;
+//     for (let i = 2; i <= n; i++) 
+//         res = res * i; 
+//     return res; 
+// }
 
-let numero = Number(prompt(`Entrez un numéro afin qu'il soit factoriser :`));
+// let numero = Number(prompt(`Entrez un numéro afin qu'il soit factoriser :`));
 
-console.log(fact(numero));
+// console.log(fact(numero));
+
+
+
+
+// Exercice 5.8
+
+// let TableauUser = [];
+// let NombrePlusEleve;
+// let indexTableau;
+
+// for(let i = 0; i <= 5; i+=1){
+//     let nombreUser = Number(prompt(`Entrez votre valeur ici :`));
+//     TableauUser.push(nombreUser);
+// }
+
+// NombrePlusEleve = TableauUser[0];
+// indexTableau = 0;
+// for(let i = 1; i <= TableauUser.length; i+=1){
+    
+//     if(NombrePlusEleve < TableauUser[i]){
+//         NombrePlusEleve = TableauUser[i];
+//         indexTableau = i;
+//     }
+    
+
+// }
+
+// console.log(`Le nombre le plus grand a été mis à la position  ${indexTableau} : et c'est ${NombrePlusEleve}`);
+
+
+
+// Exercice 5.9
+
+// let TableauUser = [];
+// let NombrePlusEleve;
+// let indexTableau;
+
+// for(let i = 1; i > 0; i+=1){
+//     let nombreUser = Number(prompt(`Entrez votre valeur ici :`));
+//     TableauUser.push(nombreUser);
+//     if(nombreUser === 0){
+//         break;
+//     }
+// }
+
+// NombrePlusEleve = TableauUser[0];
+// indexTableau = 0;
+// for(let i = 1; i <= TableauUser.length; i+=1){
+    
+//     if(NombrePlusEleve < TableauUser[i]){
+//         NombrePlusEleve = TableauUser[i];
+//         indexTableau = i;
+//     }
+    
+
+// }
+
+// console.log(`Le nombre le plus grand a été mis à la position  ${indexTableau} : et c'est ${NombrePlusEleve}`);
